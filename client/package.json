@@ -25,11 +25,14 @@
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "bootstrap": "^4.5.2",
+    "bootswatch": "^4.5.2",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^5.6.1",
+    "ngx-spinner": "^10.0.1",
     "ngx-toastr": "^13.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "xng-breadcrumb": "^6.1.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
