@@ -1,12 +1,3 @@
-<div class="float-none d-flex justify-content-between flex-column flex-lg-row mt-3">
-  <button class="btn btn-outline-primary" routerLink="/basket">
-    <i class="fa fa-angle-left"></i> Back to Basket
-  </button>
-  <button class="btn btn-primary" cdkStepperNext>
-    Go to Delivery <i class="fa fa-angle-right"></i>
-  </button>
-</div>
-
 <div class="mt-4" [formGroup]="checkoutForm">
   <div class="d-flex justify-content-between align-items-center">
     <h4>Shipping Address</h4>
@@ -34,3 +25,11 @@
   </div>
 </div>
 
+<div class="float-none d-flex justify-content-between flex-column flex-lg-row mt-3">
+  <button class="btn btn-outline-primary" routerLink="/basket">
+    <i class="fa fa-angle-left"></i> Back to Basket
+  </button>
+  <button [disabled]="checkoutForm.get('addressForm').invalid" class="btn btn-primary" cdkStepperNext>
+    Go to Delivery <i class="fa fa-angle-right"></i>
+  </button>
+</div>
