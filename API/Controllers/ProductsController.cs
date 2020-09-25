@@ -34,6 +34,7 @@ namespace API.Controllers
       _productsRepo = productsRepo;
     }
 
+    [Cached(600)]
     [HttpGet]
     public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts([FromQuery]ProductSpecParams productParams)
     {
